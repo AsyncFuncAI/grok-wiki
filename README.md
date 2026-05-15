@@ -2,13 +2,14 @@
 
 Grok-Wiki is a desktop app powered by Grok CLI that turns GitHub repositories and local codebases into source-cited technical wikis, architecture guides, and codebase maps.
 
-## Alpha 0.0.1
+## Release 0.0.2
 
-This alpha release ships the macOS Apple Silicon desktop build.
+This release ships the macOS Apple Silicon desktop build.
 
 Download:
 
-- `releases/Grok-Wiki_0.0.1_aarch64.dmg`
+- `releases/Grok-Wiki_0.0.2_aarch64.dmg`
+- Latest GitHub release: https://github.com/AsyncFuncAI/grok-wiki/releases/latest
 
 Requirements:
 
@@ -25,11 +26,11 @@ Requirements:
 ## Verify
 
 ```sh
-shasum -a 256 releases/Grok-Wiki_0.0.1_aarch64.dmg
+shasum -a 256 releases/Grok-Wiki_0.0.2_aarch64.dmg
 ```
 
 Expected SHA-256:
 
 ```text
-f868976d40e549af0da0eefb4055e7490d6531b6254bda9a72bcfbfee91851a2
+df2b9eafc2ec9b87441ddd19653a015cdcd64b7025281f95b355666998ef18fa
 ```
