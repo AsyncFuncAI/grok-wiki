@@ -6,11 +6,11 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.4](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.5](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.4_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.4/Grok-Wiki_0.0.4_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.5_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.5/Grok-Wiki_0.0.5_aarch64.dmg) |
 
 ## Requirements
 
@@ -42,6 +42,12 @@ Grok-Wiki can run with any supported local CLI agent:
 - Claude Code: install with `curl -fsSL https://claude.ai/install.sh | bash`, then authenticate locally
 
 ## Changelog
+
+### 0.0.5
+- Adds a titlebar Update button driven by the Tauri updater when a newer release is available
+- Fixes follow-up submit behavior so Enter/click sends reliably and clears the follow-up input immediately
+- Fixes follow-up slash-command picker positioning and keeps picker updates scoped to the active composer
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.4
 - Bundles the desktop server, web assets, and Bun runtime inside the macOS app for reliable first-run startup
