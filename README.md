@@ -1,21 +1,21 @@
 # Grok-Wiki
 
-Grok-Wiki is a closed-source desktop app powered by Grok CLI that turns GitHub repositories and local codebases into source-cited technical wikis, architecture guides, and codebase maps.
+Grok-Wiki is a closed-source desktop app powered by local CLI agents that turns GitHub repositories and local codebases into source-cited technical wikis, architecture guides, and codebase maps.
 
 This repo is the public distribution hub — releases, issue tracking, and auto-updater metadata. Source code is maintained privately.
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.5](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.6](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.5_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.5/Grok-Wiki_0.0.5_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.6_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.6/Grok-Wiki_0.0.6_aarch64.dmg) |
 
 ## Requirements
 
 - macOS on Apple Silicon (M1/M2/M3/M4)
-- One local agent CLI installed and authenticated: Grok CLI, Codex CLI, or Claude Code
+- One local agent CLI installed and authenticated: Grok CLI, Codex CLI, Claude Code, or Antigravity CLI
 
 ## Install
 
@@ -27,7 +27,7 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 ## What It Does
 
 - Generates repository wikis from GitHub repos and local paths
-- Uses local CLI agent execution through Grok CLI
+- Uses local CLI agent execution through Grok CLI, Codex CLI, Claude Code, and Antigravity CLI
 - Saves generated wiki artifacts locally
 - Includes default generated wiki examples for first-run exploration
 - Offers outcome-led wiki formats for mental models, hidden quirks, feature scouting, repo comparison, debugging maps, and tech-reader briefs
@@ -40,8 +40,16 @@ Grok-Wiki can run with any supported local CLI agent:
 - Grok CLI: after install, authenticate with `grok login`
 - Codex CLI: install with `npm i -g @openai/codex` or `brew install codex`, then authenticate with `codex login`
 - Claude Code: install with `curl -fsSL https://claude.ai/install.sh | bash`, then authenticate locally
+- Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.6
+- Adds Google Antigravity CLI as a local agent alongside Grok CLI, Codex CLI, and Claude Code
+- Improves local-agent Ask runs with clearer idle/loading states, better progress signals, and cancellable wiki generation
+- Fixes follow-up composer submission/clearing, slash picker bounds, source citation linking, and local/remote source previews
+- Adds safer page repair flows, including concurrent page regeneration without clobbering saved wiki pages
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.5
 - Adds a titlebar Update button driven by the Tauri updater when a newer release is available
