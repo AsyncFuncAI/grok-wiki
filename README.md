@@ -6,23 +6,23 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.3](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.4](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.3_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.3/Grok-Wiki_0.0.3_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.4_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.4/Grok-Wiki_0.0.4_aarch64.dmg) |
 
 ## Requirements
 
 - macOS on Apple Silicon (M1/M2/M3/M4)
-- [Grok CLI](https://x.ai/grok) installed and authenticated locally
+- One local agent CLI installed and authenticated: Grok CLI, Codex CLI, or Claude Code
 
 ## Install
 
 1. Download the `.dmg` from the [latest release](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 2. Open the `.dmg` and drag **Grok-Wiki.app** to `/Applications`
 3. Launch **Grok-Wiki.app**
-4. Sign in with your Grok CLI credentials when prompted
+4. Choose a local agent in the app and follow the setup copy if it is not installed yet
 
 ## What It Does
 
@@ -33,7 +33,22 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 - Offers outcome-led wiki formats for mental models, hidden quirks, feature scouting, repo comparison, debugging maps, and tech-reader briefs
 - Turns generated wikis into in-app slide previews for lightweight sharing
 
+## Local Agent Setup
+
+Grok-Wiki can run with any supported local CLI agent:
+
+- Grok CLI: after install, authenticate with `grok login`
+- Codex CLI: install with `npm i -g @openai/codex` or `brew install codex`, then authenticate with `codex login`
+- Claude Code: install with `curl -fsSL https://claude.ai/install.sh | bash`, then authenticate locally
+
 ## Changelog
+
+### 0.0.4
+- Bundles the desktop server, web assets, and Bun runtime inside the macOS app for reliable first-run startup
+- Fixes local CLI readiness and run execution drift after installing Grok CLI, Codex CLI, or Claude Code while the app is open
+- Adds sidecar recovery so Ask and Wiki runs can restart a stale local CLI sidecar instead of staying stuck
+- Updates first-time setup copy for Grok CLI, Codex CLI, and Claude Code
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.3
 - New outcome-led wiki formats for first-pass orientation, mental models, hidden quirks, feature scouting, worth-stealing analysis, debugging atlases, repo comparison, and tech-reader briefs
