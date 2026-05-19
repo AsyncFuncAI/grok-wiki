@@ -6,11 +6,11 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.2](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.3](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.2_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.2/Grok-Wiki_0.0.2_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.3_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.3/Grok-Wiki_0.0.3_aarch64.dmg) |
 
 ## Requirements
 
@@ -21,7 +21,7 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 1. Download the `.dmg` from the [latest release](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 2. Open the `.dmg` and drag **Grok-Wiki.app** to `/Applications`
-3. On first launch, macOS may show a security prompt — open **System Settings → Privacy & Security** and click **Open Anyway**
+3. Launch **Grok-Wiki.app**
 4. Sign in with your Grok CLI credentials when prompted
 
 ## What It Does
@@ -30,8 +30,18 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 - Uses local CLI agent execution through Grok CLI
 - Saves generated wiki artifacts locally
 - Includes default generated wiki examples for first-run exploration
+- Offers outcome-led wiki formats for mental models, hidden quirks, feature scouting, repo comparison, debugging maps, and tech-reader briefs
+- Turns generated wikis into in-app slide previews for lightweight sharing
 
 ## Changelog
+
+### 0.0.3
+- New outcome-led wiki formats for first-pass orientation, mental models, hidden quirks, feature scouting, worth-stealing analysis, debugging atlases, repo comparison, and tech-reader briefs
+- Cleaner Compound Engineering lens support in Ask with slash commands, pro tips, and quieter UI copy
+- Multiple concurrent wiki generations with higher page limits for larger codebase digests
+- Slide generation and in-app Open Slide preview from generated wikis
+- Desktop polish for sidebars, wiki controls, stream panels, feedback links, and reduced repaint/flicker during agent streaming
+- Signed and notarized macOS Apple Silicon DMG and updater artifacts
 
 ### 0.0.2
 - Signed updater artifacts for automatic future updates
