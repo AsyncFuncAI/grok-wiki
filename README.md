@@ -6,11 +6,11 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.6](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.7](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.6_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.6/Grok-Wiki_0.0.6_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.7_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.7/Grok-Wiki_0.0.7_aarch64.dmg) |
 
 ## Requirements
 
@@ -43,6 +43,14 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.7
+- Adds configurable global wiki hotkeys with confirmation mode and power-user auto-run mode
+- Adds subtle desktop feedback for hotkey triggers, including the floating status pill and optional haptic tick
+- Improves hotkey wiki defaults for runtime, page count, and format selection
+- Adds continuous-scroll wiki reading as the default with a Pages mode toggle for paged navigation
+- Refines wiki reader layout so continuous markdown keeps the same readable width behavior as paged markdown
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.6
 - Adds Google Antigravity CLI as a local agent alongside Grok CLI, Codex CLI, and Claude Code
