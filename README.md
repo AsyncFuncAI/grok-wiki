@@ -6,11 +6,11 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.8](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.9](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.8_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.8/Grok-Wiki_0.0.8_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.9_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.9/Grok-Wiki_0.0.9_aarch64.dmg) |
 
 ## Requirements
 
@@ -44,6 +44,13 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.9
+- Adds Markdown ZIP export from the desktop Share flow
+- Adds Explain Like I'm 5 wiki format
+- Improves Antigravity CLI wiki generation reliability
+- Refines wiki reader and gallery polish, including scroll/pages controls, theme support, and search behavior
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.8
 - Adds public wiki publishing and sharing to grok-wiki.com
