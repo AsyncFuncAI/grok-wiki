@@ -6,11 +6,11 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.10](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.11](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.10_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.10/Grok-Wiki_0.0.10_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.11_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.11/Grok-Wiki_0.0.11_aarch64.dmg) |
 
 ## Requirements
 
@@ -44,6 +44,12 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.11
+- Adds privacy-first desktop product analytics with a local Settings > Privacy opt-out
+- Keeps analytics explicit: no session replay, autocapture, pageviews, prompts, code, repo names, local paths, API keys, or run logs
+- Allows Ask to select local folders that are not Git repositories
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.10
 - Adds private link sharing for wikis while keeping private snapshots out of the public gallery
