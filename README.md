@@ -6,11 +6,11 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.11](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.12](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.11_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.11/Grok-Wiki_0.0.11_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.12_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.12/Grok-Wiki_0.0.12_aarch64.dmg) |
 
 ## Requirements
 
@@ -44,6 +44,13 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.12
+- Adds format previews so users can peek at each wiki style before spending a run
+- Adds a floating wiki ask composer that opens directly into Ask with the wiki attached as context
+- Adds quota-aware page guidance for larger wiki runs
+- Improves public wiki markdown access for agentic readers and generation status handling for partial failures
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.11
 - Adds privacy-first desktop product analytics with a local Settings > Privacy opt-out
