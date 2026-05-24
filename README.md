@@ -6,11 +6,11 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.12](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.13](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.12_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.12/Grok-Wiki_0.0.12_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.13_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.13/Grok-Wiki_0.0.13_aarch64.dmg) |
 
 ## Requirements
 
@@ -44,6 +44,12 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.13
+- Compacts noisy wiki source citations into a subtle sources disclosure in desktop and public wiki readers
+- Fixes a desktop-only renderer override that could still show raw Sources lines after Mermaid setup
+- Keeps the desktop app bundle scoped to local app assets while shipping signed, notarized macOS artifacts
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.12
 - Adds format previews so users can peek at each wiki style before spending a run
