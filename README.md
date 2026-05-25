@@ -6,16 +6,16 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.13](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.14](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.13_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.13/Grok-Wiki_0.0.13_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.14_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.14/Grok-Wiki_0.0.14_aarch64.dmg) |
 
 ## Requirements
 
 - macOS on Apple Silicon (M1/M2/M3/M4)
-- One local agent CLI installed and authenticated: Grok CLI, Codex CLI, Claude Code, or Antigravity CLI
+- One local agent CLI installed and authenticated: Grok CLI, Codex CLI, Claude Code, Pi, or Antigravity CLI
 
 ## Install
 
@@ -27,7 +27,7 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 ## What It Does
 
 - Generates repository wikis from GitHub repos and local paths
-- Uses local CLI agent execution through Grok CLI, Codex CLI, Claude Code, and Antigravity CLI
+- Uses local CLI agent execution through Grok CLI, Codex CLI, Claude Code, Pi.Codex, Pi.Claude, and Antigravity CLI
 - Saves generated wiki artifacts locally
 - Publishes read-only wiki snapshots to grok-wiki.com for lightweight sharing
 - Includes default generated wiki examples for first-run exploration
@@ -41,9 +41,17 @@ Grok-Wiki can run with any supported local CLI agent:
 - Grok CLI: after install, authenticate with `grok login`
 - Codex CLI: install with `npm i -g @openai/codex` or `brew install codex`, then authenticate with `codex login`
 - Claude Code: install with `curl -fsSL https://claude.ai/install.sh | bash`, then authenticate locally
+- Pi.Codex: install Pi with `npm install -g --ignore-scripts @earendil-works/pi-coding-agent`, start `pi`, enter `/login`, and select ChatGPT Plus/Pro (Codex)
+- Pi.Claude: install Pi with `npm install -g --ignore-scripts @earendil-works/pi-coding-agent`, start `pi`, enter `/login`, and select Claude Pro / Max
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.14
+- Adds Pi.Codex and Pi.Claude as local CLI agent runtime options for desktop Ask workflows
+- Adds Pi agent readiness, install, and auth guidance while preserving the local, user-owned credential model
+- Improves local CLI streaming and markdown rendering so Pi/Codex/Claude-style agent output stays scoped and readable
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.13
 - Compacts noisy wiki source citations into a subtle sources disclosure in desktop and public wiki readers
