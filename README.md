@@ -6,11 +6,11 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.14](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.15](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.14_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.14/Grok-Wiki_0.0.14_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.15_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.15/Grok-Wiki_0.0.15_aarch64.dmg) |
 
 ## Requirements
 
@@ -46,6 +46,12 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.15
+- Allows local folders without a `.git` directory to be used for read-only Ask and Wiki generation
+- Keeps branch and ref selection Git-only while adding clearer desktop confirmation for local folder mode
+- Adds richer local CLI failure diagnostics, Anthropic SDK stderr capture, and a configurable Antigravity quiet-output timeout
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.14
 - Adds Pi.Codex and Pi.Claude as local CLI agent runtime options for desktop Ask workflows
