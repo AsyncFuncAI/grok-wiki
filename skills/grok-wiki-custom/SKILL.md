@@ -24,17 +24,19 @@ Use this skill for intention-driven wiki generation: Ask first, prompt second, g
 1. Confirm generation intent.
    - If the user already supplied a clear intention, audience, page count, source, and agent, proceed.
    - If the intention is missing, ask one concise question before running generation: "Who is this wiki for, and what should it help them do?"
-   - If page count is missing, choose a small focused default: 3 pages for custom contributor/operator/product wikis, unless the user asks otherwise.
+   - If page count is missing, do not choose a default before discovery. Let Ask recommend the rough page count and page plan from the repo's size, complexity, and the stated intention.
 
 2. Discover the repository.
    - Run `grok-wiki ask <source> "<discovery question>" --mode deep`.
    - Include `--agent <id>` if selected.
    - Ask for product purpose, architecture, key workflows, important implementation areas, contribution risks, and the highest-value page plan for the stated intention.
+   - If the user did not provide a page count, explicitly ask Ask to recommend a rough page count or tight range. Use its recommendation as `<N>` for generation. If Ask returns a range, choose the smallest count that still covers the recommended plan; keep custom wikis compact unless the repository clearly needs more depth.
 
 3. Craft a custom style prompt.
    - Write the prompt to a local file in the current shell working directory, for example `.grok-wiki-<repo>-custom-prompt.md`.
    - If the source is remote and there is no local repo workspace, write the prompt to a temp path such as `$TMPDIR/grok-wiki-<repo>-custom-prompt.md`. `--style-prompt-file` accepts absolute paths.
-   - The prompt should name the exact audience, outcome, page titles, and quality bar.
+   - The prompt should name the exact audience, outcome, chosen page count, page titles, and quality bar.
+   - If `<N>` came from Ask, briefly encode the rationale for the count in the prompt so the structure agent preserves the intended scope.
    - Keep it vendor-agnostic unless the repo itself is provider-specific.
    - Include instructions to use codebase evidence, paths, contributor checklists, and tests where useful.
 
@@ -47,7 +49,7 @@ grok-wiki generate <source> --agent <id> --page-count-mode fixed --pages <N> --s
 
    - Omit `--agent` only when the user did not choose one.
    - Use the CLI-facing `--reasoning` flag if the selected agent supports a reasoning setting. Some local-agent process logs may mention downstream names such as `--reasoning-effort`; do not pass those log-only flag names to `grok-wiki`.
-   - Use `--page-count-mode fixed` when the user asked for an exact page count or you chose a focused page plan.
+   - Use `--page-count-mode fixed` when the user asked for an exact page count or Ask recommended a focused page plan.
 
 5. Verify.
    - Wait for the command to exit successfully.
@@ -59,7 +61,7 @@ grok-wiki generate <source> --agent <id> --page-count-mode fixed --pages <N> --s
 Use this shape, adapted to the user's intention:
 
 ```text
-What is this repository about? For the goal "<intention>", identify the product purpose, main runtime architecture, key user workflows, important implementation areas, likely contributor/operator risks, and the highest-value <N> wiki pages to generate. Use evidence from the codebase and be concise but specific.
+What is this repository about? For the goal "<intention>", identify the product purpose, main runtime architecture, key user workflows, important implementation areas, likely contributor/operator risks, and the highest-value wiki page plan. If no page count was provided, recommend a rough page count or tight range and explain why that scope fits the repo. If a page count was provided, recommend the highest-value <N> pages. Use evidence from the codebase and be concise but specific.
 ```
 
 ## Custom Prompt Template
