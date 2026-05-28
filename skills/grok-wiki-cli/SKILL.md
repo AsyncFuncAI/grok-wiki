@@ -101,13 +101,15 @@ antigravity
 grok-wiki generate <source...> [--agent ID] [--model MODEL] [--reasoning LEVEL] [--pages N] [--page-count-mode auto|fixed] [--style STYLE] [--language LANG] [--concurrency N]
 ```
 
+Use the CLI-facing `--reasoning` flag. Some local-agent process logs may mention provider-specific or downstream names such as `--reasoning-effort`; do not pass those log-only flag names to `grok-wiki`.
+
 Examples:
 
 ```bash
 grok-wiki generate expressjs/express
-grok-wiki generate expressjs/express --agent codex --model gpt-5.5 --pages 8 --style first-30
+grok-wiki generate expressjs/express --agent codex --model <model-name> --pages 8 --style first-30
 grok-wiki generate ./api ./web --agent claude --page-count-mode fixed --pages 6
-grok-wiki generate ~/work/repo#main --style custom --style-prompt "Write as an operator runbook."
+grok-wiki generate ~/work/repo#main --style custom --style-prompt-file ./operator-runbook-prompt.md
 ```
 
 Defaults:
@@ -116,9 +118,10 @@ Defaults:
 - style: `first-30`
 - pages: `auto` up to `6`
 - language: `en`
-- storage: `~/.rlm-wiki`, unless `GROK_WIKI_ROOT` or `RLM_WIKI_ROOT` is set
+- storage: `~/.rlm-wiki`, unless `GROK_WIKI_ROOT` or `RLM_WIKI_ROOT` is set. The legacy `~/.rlm-wiki` name is intentional for backward compatibility even when using the `grok-wiki` binary.
 
 Use `--style custom` only with `--style-prompt` or `--style-prompt-file`.
+Prefer `--style-prompt-file` for multi-sentence custom prompts so shell quoting and agent wrappers cannot alter the prompt.
 
 ### Ask
 

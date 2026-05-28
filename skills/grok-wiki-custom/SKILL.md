@@ -32,7 +32,8 @@ Use this skill for intention-driven wiki generation: Ask first, prompt second, g
    - Ask for product purpose, architecture, key workflows, important implementation areas, contribution risks, and the highest-value page plan for the stated intention.
 
 3. Craft a custom style prompt.
-   - Write the prompt to a local file in the current workspace, for example `.grok-wiki-<repo>-custom-prompt.md`.
+   - Write the prompt to a local file in the current shell working directory, for example `.grok-wiki-<repo>-custom-prompt.md`.
+   - If the source is remote and there is no local repo workspace, write the prompt to a temp path such as `$TMPDIR/grok-wiki-<repo>-custom-prompt.md`. `--style-prompt-file` accepts absolute paths.
    - The prompt should name the exact audience, outcome, page titles, and quality bar.
    - Keep it vendor-agnostic unless the repo itself is provider-specific.
    - Include instructions to use codebase evidence, paths, contributor checklists, and tests where useful.
@@ -45,6 +46,7 @@ grok-wiki generate <source> --agent <id> --page-count-mode fixed --pages <N> --s
 ```
 
    - Omit `--agent` only when the user did not choose one.
+   - Use the CLI-facing `--reasoning` flag if the selected agent supports a reasoning setting. Some local-agent process logs may mention downstream names such as `--reasoning-effort`; do not pass those log-only flag names to `grok-wiki`.
    - Use `--page-count-mode fixed` when the user asked for an exact page count or you chose a focused page plan.
 
 5. Verify.
