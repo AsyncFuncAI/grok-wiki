@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grok-Wiki Custom"
+  short_description: "Ask-first custom repository wikis"
+  default_prompt: "Use $grok-wiki-custom to discover a repository first, then generate a custom wiki for my intended audience."

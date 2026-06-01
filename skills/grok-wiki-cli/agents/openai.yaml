@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grok-Wiki CLI"
+  short_description: "Run local-agent wiki and Ask workflows"
+  default_prompt: "Use $grok-wiki-cli to generate a repository wiki or ask codebase questions with the local CLI runtime."
