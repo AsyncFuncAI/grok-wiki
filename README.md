@@ -6,11 +6,11 @@ This repo is the public distribution hub — releases, issue tracking, and auto-
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.16](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.17](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.16_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.16/Grok-Wiki_0.0.16_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.17_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.17/Grok-Wiki_0.0.17_aarch64.dmg) |
 
 ## Requirements
 
@@ -46,6 +46,16 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.17
+- Adds in-place Docs Chat for documentation pages, with follow-up and new-question support without routing users to Ask
+- Prioritizes current generated documentation MDX before repository inspection for documentation questions
+- Preserves selected local CLI agent and model for Docs Chat runs
+- Improves Docs Chat typing and streaming responsiveness with scoped panel updates
+- Fixes desktop and public docs rendering for tabs, light-mode highlights, Python syntax highlighting, Mermaid diagrams, and code copy controls
+- Adds public docs video thumbnail metadata for Google video indexing
+- Strengthens the release runbook so public main and release tags stay limited to README.md and skills/
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.16
 - Adds public wiki publishing and gallery surfaces for read-only wiki sharing
