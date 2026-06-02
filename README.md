@@ -1,8 +1,6 @@
 # Grok-Wiki
 
-Grok-Wiki is a closed-source desktop app powered by local CLI agents that turns GitHub repositories and local codebases into source-cited technical wikis, architecture guides, and codebase maps.
-
-This repo is the public distribution hub — releases, issue tracking, and auto-updater metadata. Source code is maintained privately.
+Grok‑Wiki is a desktop app powered by local CLI agents that turns GitHub repositories and local codebases into source‑cited technical wikis, architecture guides, and codebase maps.
 
 ## Download
 
