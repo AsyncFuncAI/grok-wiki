@@ -4,11 +4,11 @@ Grok‑Wiki is a desktop app powered by local CLI agents that turns GitHub repos
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.18](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.19](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.18_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.18/Grok-Wiki_0.0.18_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.19_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.19/Grok-Wiki_0.0.19_aarch64.dmg) |
 
 ## Requirements
 
@@ -44,6 +44,12 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.19
+- Improves desktop local CLI discovery for custom npm, pnpm, Bun, Volta, asdf, mise, nvm, and fnm install roots
+- Retries Grok CLI startup in headless streaming mode when the ACP initialize/session path fails
+- Adds regression coverage for local CLI path discovery, fake-machine test isolation, and Grok fallback behavior
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.18
 - Fixes a desktop React dependency mismatch that could trigger invalid hook call errors at startup
