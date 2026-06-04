@@ -1,4 +1,14 @@
+<p align="center">
+  <img src="https://grok-wiki.com/grok-wiki-preview-bottom-left.png" width="100%">
+</p>
+
+<div align="center">
+
 # Grok-Wiki
+
+**Bring your local agents. Keep the context yours.**
+
+</div>
 
 Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub repositories and local codebases into source-cited technical wikis, architecture guides, and codebase maps.
 
