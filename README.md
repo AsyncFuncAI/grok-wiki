@@ -1,14 +1,14 @@
 # Grok-Wiki
 
-Grok‑Wiki is a desktop app powered by local CLI agents that turns GitHub repositories and local codebases into source‑cited technical wikis, architecture guides, and codebase maps.
+Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub repositories and local codebases into source-cited technical wikis, architecture guides, and codebase maps.
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.19](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.20](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.19_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.19/Grok-Wiki_0.0.19_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.20_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.20/Grok-Wiki_0.0.20_aarch64.dmg) |
 
 ## Requirements
 
@@ -44,6 +44,13 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.20
+- Fixes the desktop Local CLI picker so selecting Grok CLI, Codex CLI, Claude Code, Pi, or Antigravity reliably switches the active local agent
+- Keeps refreshed local-agent menu rows clickable during readiness rescans
+- Opens setup instructions when the newly selected local CLI agent is missing or blocked
+- Adds regression coverage for refreshed menu rows, rebinding safety, persisted local-runtime selection, and setup-popover visibility
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.19
 - Improves desktop local CLI discovery for custom npm, pnpm, Bun, Volta, asdf, mise, nvm, and fnm install roots
