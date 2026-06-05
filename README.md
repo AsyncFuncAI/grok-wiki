@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.20](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.21](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.20_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.20/Grok-Wiki_0.0.20_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.21_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.21/Grok-Wiki_0.0.21_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,15 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.21
+- Adds Orca-style first-run onboarding for choosing a local CLI agent, appearance, and app UI language
+- Adds English, Japanese, and Mandarin desktop language choices while keeping generated wiki output language separate
+- Updates desktop branding with the Grok-Wiki favicon, app icon, and website-matched wordmark treatment
+- Redesigns Ask thinking steps into human-readable progress states instead of raw command/path logs
+- Smooths high-frequency stream updates by coalescing process events and patching only the active Ask timeline
+- Fixes Grok CLI live-answer runs so a Research Agent indicator stays visible even when answer text streams before tool events
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.20
 - Fixes the desktop Local CLI picker so selecting Grok CLI, Codex CLI, Claude Code, Pi, or Antigravity reliably switches the active local agent
