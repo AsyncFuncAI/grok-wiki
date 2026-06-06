@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.21](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.22](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.21_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.21/Grok-Wiki_0.0.21_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.22_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.22/Grok-Wiki_0.0.22_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,14 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.22
+- Adds desktop completion attention for long-running wiki and Ask work with native alerts, optional sound, dock badge counts, and deep links back to the finished item
+- Upgrades the embedded terminal with xterm-backed PTYs, compact project/runtime controls, and calmer empty states
+- Adds Orca-style `Cmd+D` split-right and `Cmd+Shift+D` split-down terminal shortcuts while keeping splits inside the same tab
+- Makes natural `exit` close the shell pane, prevents duplicate split panes, and keeps surviving panes visible when another pane exits
+- Tightens streaming render boundaries so Ask answers, wiki progress, and terminal updates patch their owning surfaces instead of repainting the desktop shell
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.21
 - Adds Orca-style first-run onboarding for choosing a local CLI agent, appearance, and app UI language
