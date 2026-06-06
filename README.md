@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.22](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.23](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.22_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.22/Grok-Wiki_0.0.22_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.23_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.23/Grok-Wiki_0.0.23_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,13 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.23
+- Fixes packaged macOS terminal-agent launches when the sidecar detects Claude, Codex, Grok, or another local CLI but the app's narrower GUI PATH cannot find the executable
+- Launches local agents through the detected executable path, preserving BYOK/BYOC setups across shell managers, npm install roots, Volta, asdf, mise, nvm, and fnm
+- Keeps very fast startup exits visible long enough to show diagnostics instead of flickering the pane closed after a failed launch
+- Preserves Orca-style close-on-exit behavior for established terminal panes
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.22
 - Adds desktop completion attention for long-running wiki and Ask work with native alerts, optional sound, dock badge counts, and deep links back to the finished item
