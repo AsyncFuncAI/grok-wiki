@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.23](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.24](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.23_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.23/Grok-Wiki_0.0.23_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.24_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.24/Grok-Wiki_0.0.24_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,14 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.24
+- Adds warmer 90s memory-style desktop entry surfaces for Projects, Wiki, Ask, Docs, and the launchpad
+- Reworks Projects into an image-backed cover while keeping the dense project list and New Project action visible
+- Gives Ask, Wiki, and Docs calmer top-of-page visual treatments; Ask keeps the composer separate from the image hero
+- Refreshes the launchpad with a softer office coffee-kitchen banner, no logo mark, clearer explanatory copy, and a sharper placeholder for repo, folder, or question starts
+- Removes the extra Wiki and Docs gallery refresh button for a calmer generation surface
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.23
 - Fixes packaged macOS terminal-agent launches when the sidecar detects Claude, Codex, Grok, or another local CLI but the app's narrower GUI PATH cannot find the executable
