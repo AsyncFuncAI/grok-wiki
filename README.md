@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.24](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.25](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.24_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.24/Grok-Wiki_0.0.24_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.25_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.25/Grok-Wiki_0.0.25_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,13 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.25
+- Adds a floating outline peek for multi-turn Ask sessions so long answers stay navigable without leaving the current turn
+- Keeps Ask outline updates scoped to the active surface instead of repainting the broader desktop shell during streaming
+- Improves project item rendering and repository grouping coverage so project lists stay stable as repository metadata changes
+- Adds focused regression tests for Ask outline render scope and project grouping behavior
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.24
 - Adds warmer 90s memory-style desktop entry surfaces for Projects, Wiki, Ask, Docs, and the launchpad
