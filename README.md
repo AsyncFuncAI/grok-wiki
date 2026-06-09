@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.25](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.26](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.25_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.25/Grok-Wiki_0.0.25_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.26_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.26/Grok-Wiki_0.0.26_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,15 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.26
+- Adds Knowledge Bases that distill Ask sessions into source-grounded study cards and merge new evidence with existing cards
+- Adds Knowledge Base publishing and private read links, with a calmer record-shop workspace and card/list review modes
+- Changes project Knowledge Base affordances to lightbulbs that light up when a project has a Knowledge Base
+- Adds guided Wiki and Ask interview flows that ask short clarifying questions before generation, while preserving skip paths for fast runs
+- Adds Episode 06, “Jealousy-Driven Development,” to promote Ask as a multi-repository study partner
+- Expands regression coverage for Knowledge Base storage, merge, publish, project grouping, Ask clarify, Wiki interview, render scope, and desktop routing
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.25
 - Adds a floating outline peek for multi-turn Ask sessions so long answers stay navigable without leaving the current turn
