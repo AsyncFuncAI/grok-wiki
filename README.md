@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.26](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.27](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.26_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.26/Grok-Wiki_0.0.26_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.27_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.27/Grok-Wiki_0.0.27_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,15 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.27
+- Adds a local-first Tasks board that turns Ask findings into backlog cards, epics, and sub-tasks
+- Adds Ask-to-Tasks extraction so local CLI agents can distill engineering answers into actionable work without locking users to one provider
+- Runs tasks from cards through detected local agents, with watchable terminal transcripts, completion reconciliation, and change summaries
+- Adds screenshot attachments for Ask and Clarify flows on supported local CLI agents, with clear gating for runtimes that cannot read images
+- Fixes clarified Ask turns so clarification answers reach the model and appear as a visible Clarified pill in the thread
+- Keeps Docs and Wiki generation progress scoped to the owning surface so a Docs run does not stream into the Wiki panel
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.26
 - Adds Knowledge Bases that distill Ask sessions into source-grounded study cards and merge new evidence with existing cards
