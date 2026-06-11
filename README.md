@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.27](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.28](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.27_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.27/Grok-Wiki_0.0.27_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.28_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.28/Grok-Wiki_0.0.28_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,15 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.28
+- Adds server-side PostHog error capture for the desktop local server and API flows
+- Redacts exception messages and stack traces, stripping paths, URLs, emails, tokens, and long identifiers before anything leaves the process
+- Rate-limits exception reporting so a failure loop cannot flood telemetry
+- Syncs the desktop analytics opt-out state to the bundled server so privacy settings disable both client-side and server-side capture
+- Adds hosted/server telemetry controls through `RLM_WIKI_SERVER_TELEMETRY` without coupling runs to one model provider or changing BYOK/BYOC execution paths
+- Refactors Ask outline, Wiki stream, document tabs, and repo route controllers while preserving scoped rendering boundaries for high-frequency streams
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.27
 - Adds a local-first Tasks board that turns Ask findings into backlog cards, epics, and sub-tasks
