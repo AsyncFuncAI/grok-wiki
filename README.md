@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.28](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.29](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.28_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.28/Grok-Wiki_0.0.28_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.29_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.29/Grok-Wiki_0.0.29_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,14 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.29
+- Adds desktop Ask sharing so completed Ask sessions can be published, copied, updated, or unpublished from the Ask view
+- Creates public read-only Ask pages with sanitized session payloads and stable links managed by the local desktop server
+- Adds public Ask website assets alongside the existing public wiki surface without changing the desktop app bundle boundary
+- Fixes a Safari/WebKit boot-order crash that could prevent the desktop shell from rendering after persisted navigation state loaded
+- Hardens run-event persistence so disk-full SQLite failures stop retry storms while live streams keep updating in memory
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.28
 - Adds server-side PostHog error capture for the desktop local server and API flows
