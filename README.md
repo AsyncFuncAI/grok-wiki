@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.29](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.30](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.29_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.29/Grok-Wiki_0.0.29_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.30_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.30/Grok-Wiki_0.0.30_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,13 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.30
+- Fixes desktop Ask `FailedToOpenSocket` failures where Claude Code or another Local CLI agent worked in Terminal but could not reach provider APIs from the app
+- Carries safe login-shell network config, including proxy, `NO_PROXY`, and CA bundle settings, into the bundled desktop server while continuing to filter provider API keys from agent processes
+- Adds PostHog Ask failure classification and capture for request failures, terminal stream errors, and streamed agent error text
+- Expands regression coverage for Local CLI environment filtering and Ask error classification without coupling runs to one model provider
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.29
 - Adds desktop Ask sharing so completed Ask sessions can be published, copied, updated, or unpublished from the Ask view
