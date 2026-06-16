@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.30](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.31](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.30_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.30/Grok-Wiki_0.0.30_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.31_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.31/Grok-Wiki_0.0.31_aarch64.dmg) |
 
 ## Requirements
 
