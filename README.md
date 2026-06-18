@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.31](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.32](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.31_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.31/Grok-Wiki_0.0.31_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.32_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.32/Grok-Wiki_0.0.32_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,13 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.32
+- Normalizes Ask current-workspace scopes across localized labels, mixed scope lists, badges, summaries, and interview prompts
+- Adds the minimal current Tauri dialog permission needed by terminal and confirmation flows without broadening event or file-system grants
+- Retries transient SQLite locks for lower-frequency run and artifact writes while keeping stream-event persistence on the historical timeout boundary
+- Expands regression coverage for scope normalization, desktop capability alignment, and SQLite lock timeout restoration
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.30
 - Fixes desktop Ask `FailedToOpenSocket` failures where Claude Code or another Local CLI agent worked in Terminal but could not reach provider APIs from the app
