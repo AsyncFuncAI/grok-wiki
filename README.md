@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.33](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.34](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.33_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.33/Grok-Wiki_0.0.33_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.34_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.34/Grok-Wiki_0.0.34_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,15 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.34
+- Adds project-wide Quick Open with `Cmd+P` on macOS or `Ctrl+P` elsewhere, including fuzzy file search and an instant source preview
+- Keeps Quick Open query, selection, and preview updates scoped to the overlay so the desktop shell and focused input remain stable
+- Completes provider-account settings copy for Japanese and Simplified Chinese without changing generated wiki output-language behavior
+- Routes queued Ask follow-up drafts through the composer draft controller's state boundary
+- Refreshes local CLI default-model routing and retries unavailable explicit models through each CLI's own default while preserving user-owned credentials and provider choice
+- Hardens the boundary between the open-source rlm-wiki web product and private Grok-Wiki desktop and marketing surfaces
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.33
 - Adds an Orca-style Terminal projects rail with improved TUI fidelity and project-aware local-agent workspaces
