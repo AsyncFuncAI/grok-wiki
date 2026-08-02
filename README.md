@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.32](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.33](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.32_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.32/Grok-Wiki_0.0.32_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.33_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.33/Grok-Wiki_0.0.33_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,15 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.33
+- Adds an Orca-style Terminal projects rail with improved TUI fidelity and project-aware local-agent workspaces
+- Adds opt-in Code Graph support for evidence-backed Ask and Wiki runs without coupling execution to one model provider
+- Adds provider account and usage surfaces and refreshes local CLI model catalogs while preserving user-owned credential paths
+- Polishes Ask controls, context chips, scrolling, queued follow-ups, drag and drop, and process activity
+- Aligns Tasks agent terminals with desktop terminal spawning and fixes Tasks create/run completion flows
+- Continues scoped desktop rendering work across Ask, Wiki, Tasks, terminal, sidebar, settings, and project surfaces
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.32
 - Normalizes Ask current-workspace scopes across localized labels, mixed scope lists, badges, summaries, and interview prompts
