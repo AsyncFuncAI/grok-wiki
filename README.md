@@ -14,11 +14,11 @@ Grok-Wiki is a desktop app powered by local CLI agents that turns GitHub reposit
 
 ## Download
 
-**Latest release:** [Grok-Wiki 0.0.35](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
+**Latest release:** [Grok-Wiki 0.0.36](https://github.com/AsyncFuncAI/grok-wiki/releases/latest)
 
 | Platform | Download |
 |----------|----------|
-| macOS Apple Silicon | [Grok-Wiki_0.0.35_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.35/Grok-Wiki_0.0.35_aarch64.dmg) |
+| macOS Apple Silicon | [Grok-Wiki_0.0.36_aarch64.dmg](https://github.com/AsyncFuncAI/grok-wiki/releases/download/0.0.36/Grok-Wiki_0.0.36_aarch64.dmg) |
 
 ## Requirements
 
@@ -54,6 +54,12 @@ Grok-Wiki can run with any supported local CLI agent:
 - Antigravity CLI: install with `curl -fsSL https://antigravity.google/cli/install.sh | bash`, then run `agy` once and complete Google Sign-In if prompted
 
 ## Changelog
+
+### 0.0.36
+- Code Graph now reliably prepares repository-aware context for Ask and Wiki when enabled
+- Keeps long-running local-agent streams connected and retries unavailable selected models through the agent's current default
+- Keeps streamed Docs Chat activity scoped to the active conversation so focus, scroll position, and reader state remain stable
+- Signed and notarized macOS Apple Silicon DMG plus Tauri updater artifacts
 
 ### 0.0.34
 - Adds project-wide Quick Open with `Cmd+P` on macOS or `Ctrl+P` elsewhere, including fuzzy file search and an instant source preview
